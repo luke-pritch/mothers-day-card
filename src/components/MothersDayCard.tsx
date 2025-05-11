@@ -13,6 +13,8 @@ const textVariant = (delay: number) => ({
   transition: { delay, duration: 0.6 },
 });
 
+// ...imports remain unchanged
+
 export default function MothersDayCard({ title, message, sender }: CardProps) {
   return (
     <div className="relative flex flex-col items-center min-h-screen bg-gradient-to-b from-pink-100 to-pink-300 overflow-x-hidden overflow-y-auto py-10 space-y-10">
@@ -23,13 +25,17 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
         ))}
       </div>
 
+      {/* Decorative Divider */}
+      <div className="text-3xl mb-2">🌼🌻🪻🌼🌻🪻</div>
+
       {/* Card 1 - Greeting */}
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10"
+        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10 border border-pink-200"
       >
+        <div className="text-2xl mb-2 text-center">🌸🌸</div>
         <motion.h1
           className="text-3xl font-bold text-pink-600 text-center"
           {...textVariant(0.2)}
@@ -43,6 +49,13 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
           {message}
         </motion.p>
         <motion.p
+          className="text-gray-700 text-base text-center"
+          {...textVariant(0.4)}
+        >
+          I love you so much mom and I am forever grateful for everything you
+          do. I hope you have a wonderful day filled with love and joy!
+        </motion.p>
+        <motion.p
           className="text-sm text-gray-500 text-center"
           {...textVariant(0.6)}
         >
@@ -50,31 +63,17 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
         </motion.p>
       </motion.div>
 
-      {/* Card 2 - Why I Love You */}
-      <motion.div
-        initial={{ scale: 0.95, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10"
-      >
-        <motion.h2
-          className="text-xl font-semibold text-pink-500 text-center"
-          {...textVariant(0.2)}
-        >
-          Why I Love You
-        </motion.h2>
-        <motion.p className="text-gray-600 text-center" {...textVariant(0.4)}>
-          Your kindness, strength, and unconditional love inspire me every day.
-        </motion.p>
-      </motion.div>
+      {/* Decorative Divider */}
+      <div className="text-3xl mt-2">🎉🍰🎈🎉🍰🎈</div>
 
-      {/* Card 3 - Favorite Memory */}
+      {/* Card 2 - Favorite Memory */}
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10"
+        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10 border border-pink-200"
       >
+        <div className="text-2xl mb-2 text-center">🧺🎸</div>
         <motion.h2
           className="text-xl font-semibold text-pink-500 text-center"
           {...textVariant(0.2)}
@@ -96,12 +95,41 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
         </div>
       </motion.div>
 
+      {/* Decorative Divider */}
+      <div className="text-3xl mt-2">❤️🩷❤️🩷❤️🩷</div>
+
+      {/* Card 3 - Why I Love You */}
+      <motion.div
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10 border border-pink-200"
+      >
+        <div className="text-2xl mb-2 text-center">🌷🪻</div>
+        <motion.h2
+          className="text-xl font-semibold text-pink-500 text-center"
+          {...textVariant(0.2)}
+        >
+          Why I Love You
+        </motion.h2>
+        <motion.p className="text-gray-600 text-center" {...textVariant(0.4)}>
+          I love you for so many reasons. You are the most caring and selfless
+          person I know. You always put others before yourself. You taught me
+          the importance of kindness and compassion. You are my biggest
+          supporter and always believe in me, even when I don't believe in
+          myself.
+        </motion.p>
+      </motion.div>
+
+      {/* Decorative Divider */}
+      <div className="text-3xl mt-2">📸📸📸📸📸📸</div>
+
       {/* Card 4 - Photo Gallery */}
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10"
+        className="bg-white/70 backdrop-blur-md rounded-3xl shadow-xl p-6 sm:p-8 w-[90%] max-w-md mx-auto space-y-4 z-10 border border-pink-200"
       >
         <motion.h2
           className="text-xl font-semibold text-pink-500 text-center"
