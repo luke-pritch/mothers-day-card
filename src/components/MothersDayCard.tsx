@@ -21,7 +21,7 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
     <div className="relative flex flex-col items-center min-h-screen bg-gradient-to-b from-pink-100 to-pink-300 overflow-x-hidden overflow-y-auto py-10 space-y-10">
       {/* Petal Layer */}
       <div className="absolute inset-0 pointer-events-none">
-        {[...Array(15)].map((_, i) => (
+        {[...Array(60)].map((_, i) => (
           <Petal key={i} delay={i * 0.5} />
         ))}
       </div>
