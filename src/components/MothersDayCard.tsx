@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Petal from "./Petal";
+import RevealImage from "./RevealImage";
 
 interface CardProps {
   title: string;
@@ -87,11 +88,7 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
           and I will always be grateful for that. I love you so much, Mom!
         </motion.p>
         <div className="rounded-xl overflow-hidden border border-pink-200">
-          <img
-            src="/images/bday.png"
-            alt="Favorite memory with mom"
-            className="w-full object-cover"
-          />
+          <RevealImage src="/images/bday.png" alt="Favorite memory with mom" />
         </div>
       </motion.div>
 
@@ -137,16 +134,14 @@ export default function MothersDayCard({ title, message, sender }: CardProps) {
         >
           Some of My Favorite Pictures of You
         </motion.h2>
-        <img src="/images/ja.png" alt="Memory 4" className="rounded-lg" />
+
+        <RevealImage src="/images/ja.png" alt="Memory 4" />
+
         <div className="grid grid-cols-2 gap-2">
-          <img src="/images/al.png" alt="Memory 1" className="rounded-lg" />
-          <img src="/images/cold.png" alt="Memory 2" className="rounded-lg" />
-          <img src="/images/joint.png" alt="Memory 3" className="rounded-lg" />
-          <img
-            src="/images/wedding.png"
-            alt="Memory 4"
-            className="rounded-lg"
-          />
+          <RevealImage src="/images/al.png" alt="Memory 1" />
+          <RevealImage src="/images/cold.png" alt="Memory 2" />
+          <RevealImage src="/images/joint.png" alt="Memory 3" />
+          <RevealImage src="/images/wedding.png" alt="Memory 4" />
         </div>
       </motion.div>
     </div>
